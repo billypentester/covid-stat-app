@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>COVID tracker</title>
+</head>
+<body class=" bg-gray-900">
+
+    {{!-- search field --}}
+
+     <form method="GET" id="myform" action="../index.js" class="justify-center flex p-6">
+        <input class="mt-4 text-lg p-3 text-white rounded-l-md border-white border-2 bg-gray-900  outline-none" type="text" name="search" placeholder="Enter country">
+        <input class="mt-4 py-3 px-6 font-bold rounded-r-md text-lg cursor-pointer" value="search" id="submit" type="submit">
+    </form>
+
+</body>
+</html>

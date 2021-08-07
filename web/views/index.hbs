@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>COVID tracker</title>
+    <link rel="shortcut icon" type="image/jpg" href="./../media/icon.svg"/>
+    <style>
+
+        #myVideo {
+            object-fit: cover;
+            position: fixed;
+            z-index: -1;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        input[type="text"]
+        {
+            background: transparent;
+            
+        }
+
+        .content {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+        #head{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #inner{
+            
+            margin: 0;
+            position: relative;
+            top: 40%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <video autoplay muted loop id="myVideo" class="md:w-full md:h-auto sm:h-auto sm:w-full">
+            <source src="./../media/cells.mp4" type="video/mp4">
+    </video>
+
+    <div class="content bg-gray-900 bg-opacity-75">
+
+
+        <div id="inner">
+
+            <div class="text-center">
+        
+                <header>
+                    <h1 id="head" class="text-white pt-7 lg:text-7xl text-5xl text-center md:text-6xl sm:text-5xl">COVID Tracker</h1>
+                </header>
+
+            </div>
+        
+            <div class="my-7 mx-8 p-3">
+                {{>search }}
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
